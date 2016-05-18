@@ -1,8 +1,6 @@
 var mongoose = require('mongoose');
 var Student = require('../student');
 
-//var tmp = gradesJson.students;
-
 //returns all students data
 exports.getAllStudentsData = function(callback) {
     Student.find({}).exec(function(err, student){
